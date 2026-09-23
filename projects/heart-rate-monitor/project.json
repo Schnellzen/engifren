@@ -1,0 +1,52 @@
+{
+  "slug": "heart-rate-monitor",
+  "draft": false,
+  "featured": false,
+  "confidential": false,
+
+  "title":   { "id": "Prototipe Monitor Detak Jantung", "en": "Heart Rate Monitor Prototype" },
+  "tagline": {
+    "id": "Alat monitor detak jantung portabel yang mengubah ide riset mahasiswa biomedis jadi prototipe nyata.",
+    "en": "A portable heart rate monitor that turns a biomedical student research idea into a working prototype."
+  },
+  "status": "completed",
+  "year": 2025,
+  "client_type": { "id": "Riset mahasiswa Teknik Biomedis", "en": "Biomedical Engineering student research" },
+
+  "disciplines": ["mechanical", "electronics", "software", "fabrication"],
+  "services": ["mechanical-design", "automation", "prototyping"],
+
+  "problem": {
+    "id": "Tim riset sudah punya ide dan perhitungannya, tapi belum punya alat fisik untuk mengujinya. Mereka butuh seseorang untuk membangun prototipe yang benar-benar bisa dipakai.",
+    "en": "The research team had the idea and the math, but no physical device to test it with. They needed someone to build a prototype that actually works."
+  },
+  "approach": {
+    "id": "EngiFren mengerjakan seluruh hardware, dari pemilihan komponen, wiring, firmware, sampai enclosure 3D print dan perakitan. Sistemnya berbasis ESP32 dengan sensor MAX30102 dan baterai 18650. Klip jarinya dicetak print-in-place, jadi langsung jadi tanpa perakitan dan murah untuk diproduksi.",
+    "en": "EngiFren handled the whole hardware side, from component selection, wiring and firmware to the 3D-printed enclosure and assembly. The system runs on an ESP32 with a MAX30102 sensor and 18650 batteries. The finger clip is printed in place, so it comes off the printer ready to use and is cheap to manufacture."
+  },
+  "scope": [
+    { "id": "Desain CAD enclosure",   "en": "CAD enclosure design" },
+    { "id": "PCB dan wiring",         "en": "PCB and wiring" },
+    { "id": "Pemilihan komponen",     "en": "Component selection" },
+    { "id": "Firmware",               "en": "Firmware" },
+    { "id": "3D printing",            "en": "3D printing" },
+    { "id": "Perakitan",              "en": "Assembly" }
+  ],
+  "results": [],
+
+  "costing": {
+    "visible": true,
+    "items": [
+      { "label": { "id": "Material",          "en": "Materials" },       "percent": 50 },
+      { "label": { "id": "Fabrikasi",         "en": "Fabrication" },     "percent": 30 },
+      { "label": { "id": "Biaya engineering", "en": "Engineering fee" }, "percent": 20 }
+    ]
+  },
+
+  "links": [],
+
+  "media": {
+    "cover": "cover.png",
+    "gallery": []
+  }
+}
