@@ -1,0 +1,49 @@
+{
+  "slug": "folder-name-here",
+  "draft": true,
+  "featured": false,
+  "confidential": false,
+
+  "title":   { "id": "Judul proyek", "en": "Project title" },
+  "tagline": { "id": "Satu kalimat: apa yang dibuat dan untuk apa.", "en": "One sentence: what was built and why." },
+  "status": "completed",
+  "year": 2026,
+  "client_type": { "id": "UMKM pangan", "en": "Food SME" },
+
+  "affiliations": [
+    { "name": "Nama mitra", "logo": "partner-logo.png", "url": "https://..." }
+  ],
+
+  "disciplines": ["process", "mechanical", "electronics", "control", "software", "fabrication"],
+  "services": ["process-engineering", "mechanical-design", "automation", "prototyping", "troubleshooting"],
+
+  "problem":  { "id": "Apa masalah atau kebutuhan klien (2-3 kalimat).", "en": "What the client needed (2-3 sentences)." },
+  "approach": { "id": "Bagaimana diselesaikan (2-4 kalimat).", "en": "How it was solved (2-4 sentences)." },
+  "scope": [
+    { "id": "Perhitungan perpindahan panas", "en": "Heat transfer calculation" }
+  ],
+  "results": [
+    { "label": { "id": "Panas terambil", "en": "Heat recovered" }, "value": "12 kW" }
+  ],
+
+  "costing": {
+    "visible": true,
+    "items": [
+      { "label": { "id": "Material",          "en": "Materials" },       "percent": 45 },
+      { "label": { "id": "Fabrikasi",         "en": "Fabrication" },     "percent": 25 },
+      { "label": { "id": "Biaya engineering", "en": "Engineering fee" }, "percent": 30 }
+    ]
+  },
+
+  "links": [
+    { "type": "youtube", "label": { "id": "Video demo", "en": "Demo video" }, "url": "https://www.youtube.com/watch?v=XXXXXXXXXXX" },
+    { "type": "link",    "label": { "id": "Artikel",    "en": "Article" },    "url": "https://..." }
+  ],
+
+  "media": {
+    "cover": "cover.jpg",
+    "gallery": [
+      { "src": "gallery/01.jpg", "caption": { "id": "Keterangan foto", "en": "Photo caption" } }
+    ]
+  }
+}

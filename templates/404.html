@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}404 | {{ site.brand }}{% endblock %}
+{% block main %}
+<section class="section">
+  <div class="wrap notfound">
+    <h1 class="section__title">404</h1>
+    <p><span data-l="id">Halaman ini tidak ditemukan. Mungkin tautannya sudah berubah.</span><span data-l="en">This page doesn't exist. The link may have changed.</span></p>
+    <p><a class="btn btn--primary" href="{{ root }}">{{ ui.back | t }}</a></p>
+  </div>
+</section>
+{% endblock %}

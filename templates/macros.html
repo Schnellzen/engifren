@@ -1,0 +1,28 @@
+{% macro cover(p, prefix, large=false) %}
+<div class="cover{% if large %} cover--large{% endif %}">
+  {% if p.cover and not p.confidential %}
+  <img src="{{ prefix }}{{ p.cover }}" alt="{{ p.title | tx }}" loading="{{ 'eager' if large else 'lazy' }}" decoding="async">
+  {% else %}
+  <div class="cover__blank" aria-hidden="true">{% include "logo.svg" %}</div>
+  {% endif %}
+</div>
+{% endmacro %}
+
+{% macro tags(list) %}
+{% if list %}
+<ul class="tags">
+  {% for d in list %}<li>{{ vocab.disciplines[d] | t }}</li>{% endfor %}
+</ul>
+{% endif %}
+{% endmacro %}
+
+{% macro costbar(items) %}
+<div class="costbar" role="img" aria-label="{% for i in items %}{{ i.label | tx }} {{ i.percent }}%{% if not loop.last %}, {% endif %}{% endfor %}">
+  {% for i in items %}<span class="costbar__seg" style="flex-grow: {{ i.percent }}"></span>{% endfor %}
+</div>
+<dl class="costlegend">
+  {% for i in items %}
+  <div><dt>{{ i.label | t }}</dt><dd>{{ i.percent | round(1) | replace('.0', '') }}%</dd></div>
+  {% endfor %}
+</dl>
+{% endmacro %}

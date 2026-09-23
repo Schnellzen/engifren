@@ -1,0 +1,148 @@
+{% extends "base.html" %}
+{% import "macros.html" as m %}
+{% block title %}{{ p.title | tx }} | {{ site.brand }}{% endblock %}
+{% block description %}{{ (p.tagline or site.hero.lead) | tx }}{% endblock %}
+{% block og_image %}{{ og_image or (site.base_url ~ "/assets/img/og-default.png") }}{% endblock %}
+{% block main %}
+<article class="project">
+
+  <div class="wrap">
+    <a class="back" href="{{ root }}#proyek">
+      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3 5 8l5 5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+      {{ ui.back | t }}
+    </a>
+
+    <header class="project__head">
+      <h1 class="project__title">{{ p.title | t }}</h1>
+      {% if p.tagline %}<p class="project__tagline">{{ p.tagline | t }}</p>{% endif %}
+    </header>
+
+    <dl class="titleblock">
+      {% if p.client_type %}<div><dt>{{ ui.tb_client | t }}</dt><dd>{{ p.client_type | t }}</dd></div>{% endif %}
+      {% if p.year %}<div><dt>{{ ui.tb_year | t }}</dt><dd>{{ p.year }}</dd></div>{% endif %}
+      <div><dt>{{ ui.tb_status | t }}</dt><dd><span class="status status--{{ p.status }}">{{ vocab.status[p.status] | t }}</span></dd></div>
+      {% if p.disciplines %}<div class="titleblock__wide"><dt>{{ ui.tb_disciplines | t }}</dt><dd>{{ m.tags(p.disciplines) }}</dd></div>{% endif %}
+      {% if p.affiliations %}
+      <div class="titleblock__wide"><dt>{{ ui.tb_affiliation | t }}</dt><dd class="affs">
+        {% for a in p.affiliations %}
+        {% if a.url %}<a class="aff" href="{{ a.url }}" target="_blank" rel="noopener">{% else %}<span class="aff">{% endif %}
+          {% if a.logo %}<img src="{{ a.logo }}" alt="" height="28">{% endif %}{{ a.name }}
+        {% if a.url %}</a>{% else %}</span>{% endif %}
+        {% endfor %}
+      </dd></div>
+      {% endif %}
+    </dl>
+  </div>
+
+  {% if p.confidential %}
+  <div class="wrap">
+    <p class="notice"><span class="lock">{{ ui.confidential | t }}</span> {{ ui.confidential_note | t }}</p>
+  </div>
+  {% else %}
+
+  {% if p.cover %}<div class="wrap">{{ m.cover(p, "", true) }}</div>{% endif %}
+
+  <div class="wrap project__body">
+    <div class="project__main">
+      {% if p.problem %}
+      <section class="block"><h2>{{ ui.problem | t }}</h2><p>{{ p.problem | t }}</p></section>
+      {% endif %}
+      {% if p.approach %}
+      <section class="block"><h2>{{ ui.approach | t }}</h2><p>{{ p.approach | t }}</p></section>
+      {% endif %}
+
+      {% for v in p.youtube %}
+      <figure class="video">
+        <iframe src="https://www.youtube-nocookie.com/embed/{{ v.vid }}" title="{{ v.label | tx }}" loading="lazy"
+          allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
+        <figcaption>{{ v.label | t }}</figcaption>
+      </figure>
+      {% endfor %}
+
+      {% if p.results %}
+      <section class="block">
+        <h2>{{ ui.results | t }}</h2>
+        <dl class="results">
+          {% for r in p.results %}<div><dd>{{ r.value }}</dd><dt>{{ r.label | t }}</dt></div>{% endfor %}
+        </dl>
+      </section>
+      {% endif %}
+
+      {% if show_costing and p.costing and p.costing.visible and p.costing["items"] %}
+      <section class="block">
+        <h2>{{ ui.cost_breakdown | t }}</h2>
+        {{ m.costbar(p.costing["items"]) }}
+        <p class="muted">{{ ui.cost_note | t }}</p>
+      </section>
+      {% endif %}
+    </div>
+
+    {% if p.scope or p.links %}
+    <aside class="project__side">
+      {% if p.scope %}
+      <section class="block">
+        <h2>{{ ui.scope | t }}</h2>
+        <ul class="scope">{% for s in p.scope %}<li>{{ s | t }}</li>{% endfor %}</ul>
+      </section>
+      {% endif %}
+      {% if p.links %}
+      <section class="block">
+        <h2>{{ ui.links | t }}</h2>
+        <ul class="links">{% for l in p.links %}<li><a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label | t }}</a></li>{% endfor %}</ul>
+      </section>
+      {% endif %}
+    </aside>
+    {% endif %}
+  </div>
+
+  {% if p.gallery %}
+  <div class="wrap">
+    <section class="block">
+      <h2>{{ ui.gallery | t }}</h2>
+      <ul class="gallery">
+        {% for g in p.gallery %}
+        <li><button type="button" class="gallery__item" data-full="{{ g.src }}" data-cap-id="{{ g.caption.id if g.caption else '' }}" data-cap-en="{{ g.caption.en if g.caption else '' }}">
+          <img src="{{ g.src }}" alt="{{ g.caption | tx }}" loading="lazy" decoding="async">
+        </button>{% if g.caption %}<span class="gallery__cap">{{ g.caption | t }}</span>{% endif %}</li>
+        {% endfor %}
+      </ul>
+    </section>
+  </div>
+  {% endif %}
+  {% endif %}
+
+  <section class="similar">
+    <div class="wrap similar__inner">
+      <h2>{{ ui.similar_title | t }}</h2>
+      <a class="btn btn--primary" {{ wa_attrs(ui.similar_message, p.title) }}>{{ ui.cta_whatsapp | t }}</a>
+    </div>
+  </section>
+
+  {% if others %}
+  <section class="section">
+    <div class="wrap">
+      <h2 class="section__title section__title--small">{{ ui.more_projects | t }}</h2>
+      <ul class="projects projects--compact">
+        {% for o in others %}
+        <li class="pcard">
+          <a class="pcard__link" href="{{ root }}projects/{{ o.slug }}/">
+            {{ m.cover(o, root ~ "projects/" ~ o.slug ~ "/") }}
+            <div class="pcard__body">
+              <h3 class="pcard__title">{{ o.title | t }}</h3>
+              {% if o.tagline %}<p class="pcard__tagline">{{ o.tagline | t }}</p>{% endif %}
+            </div>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+  {% endif %}
+</article>
+
+<dialog class="lightbox" aria-label="{{ ui.gallery | tx }}">
+  <form method="dialog"><button class="lightbox__close">{{ ui.close | t }}</button></form>
+  <img alt="">
+  <p class="lightbox__cap"></p>
+</dialog>
+{% endblock %}

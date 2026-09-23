@@ -1,0 +1,173 @@
+{
+  "base_url": "https://schnellzen.github.io/engifren",
+  "default_lang": "id",
+  "show_costing": true,
+
+  "brand": "EngiFren",
+  "tagline": { "id": "Teman ngobrolin proyekmu", "en": "A friend to talk your project through" },
+
+  "contact": {
+    "whatsapp": "6281228282145",
+    "whatsapp_display": "+62-812-28282-145",
+    "whatsapp_message": {
+      "id": "Halo EngiFren, saya mau ngobrolin proyek.",
+      "en": "Hi EngiFren, I'd like to talk about a project."
+    },
+    "email": "engfren.id@gmail.com",
+    "socials": []
+  },
+
+  "hero": {
+    "lead": {
+      "id": "Punya masalah teknik atau ide alat? EngiFren menghitung, mendesain, membuat, memprogram, dan menguji sampai alatnya benar-benar bekerja.",
+      "en": "Got an engineering problem or an idea for a device? EngiFren calculates, designs, builds, programs, and tests it until it actually works."
+    }
+  },
+
+  "vocab": {
+    "disciplines": {
+      "process":     { "id": "Proses",      "en": "Process" },
+      "mechanical":  { "id": "Mekanik",     "en": "Mechanical" },
+      "electronics": { "id": "Elektronik",  "en": "Electronics" },
+      "control":     { "id": "Kontrol",     "en": "Control" },
+      "software":    { "id": "Software",    "en": "Software" },
+      "fabrication": { "id": "Fabrikasi",   "en": "Fabrication" }
+    },
+    "status": {
+      "completed": { "id": "Selesai",   "en": "Completed" },
+      "ongoing":   { "id": "Berjalan",  "en": "Ongoing" },
+      "prototype": { "id": "Prototipe", "en": "Prototype" }
+    }
+  },
+
+  "services": [
+    {
+      "key": "process-engineering",
+      "name": { "id": "Rekayasa proses", "en": "Process engineering" },
+      "desc": {
+        "id": "Neraca massa dan energi, perpindahan panas, sizing alat, pemodelan dan optimasi proses.",
+        "en": "Mass and energy balances, heat transfer, equipment sizing, process modeling and optimization."
+      }
+    },
+    {
+      "key": "mechanical-design",
+      "name": { "id": "Desain mekanik", "en": "Mechanical design" },
+      "desc": {
+        "id": "CAD, gambar siap fabrikasi, alat custom, dan modifikasi mesin yang sudah ada.",
+        "en": "CAD, fabrication-ready drawings, custom equipment, and modifications to existing machines."
+      }
+    },
+    {
+      "key": "automation",
+      "name": { "id": "Otomasi & instrumentasi", "en": "Automation & instrumentation" },
+      "desc": {
+        "id": "Sensor suhu, aliran, dan tekanan; mikrokontroler; sistem kontrol; akuisisi data dan antarmuka.",
+        "en": "Temperature, flow, and pressure sensing; microcontrollers; control systems; data acquisition and interfaces."
+      }
+    },
+    {
+      "key": "prototyping",
+      "name": { "id": "Prototipe", "en": "Prototyping" },
+      "desc": {
+        "id": "Mesin proof-of-concept, alat laboratorium, sistem proses skala kecil, dan peralatan eksperimen.",
+        "en": "Proof-of-concept machines, lab equipment, small process systems, and experimental apparatus."
+      }
+    },
+    {
+      "key": "troubleshooting",
+      "name": { "id": "Troubleshooting", "en": "Troubleshooting" },
+      "desc": {
+        "id": "Mesin tidak bekerja semestinya, salah pilih komponen, atau kinerja kurang: didiagnosis lalu diperbaiki.",
+        "en": "Machines that underperform, wrong component choices, or failures: diagnosed, then fixed."
+      }
+    }
+  ],
+
+  "workflow": [
+    { "name": { "id": "Pahami",   "en": "Understand" }, "desc": { "id": "Ngobrol, definisikan masalah dan target.",       "en": "Talk it through, define the problem and target." } },
+    { "name": { "id": "Desain",   "en": "Design" },     "desc": { "id": "Perhitungan teknik dan CAD.",                   "en": "Engineering calculations and CAD." } },
+    { "name": { "id": "Buat",     "en": "Build" },      "desc": { "id": "Fabrikasi dan perakitan.",                      "en": "Fabrication and assembly." } },
+    { "name": { "id": "Program",  "en": "Program" },    "desc": { "id": "Firmware, kontrol, dan antarmuka.",             "en": "Firmware, control, and interfaces." } },
+    { "name": { "id": "Uji",      "en": "Test" },       "desc": { "id": "Pengujian dan troubleshooting.",                "en": "Testing and troubleshooting." } },
+    { "name": { "id": "Serahkan", "en": "Deliver" },    "desc": { "id": "Alat bekerja, lengkap dengan dokumentasi.",     "en": "A working system, with documentation." } }
+  ],
+
+  "costing": {
+    "title": { "id": "Biaya yang transparan", "en": "Transparent pricing" },
+    "text": {
+      "id": "Setiap penawaran dirinci: berapa untuk material, komponen, fabrikasi, dan berapa biaya engineering. Nilai kerja engineering tidak disembunyikan di dalam harga material.",
+      "en": "Every quote is itemized: how much goes to materials, components, fabrication, and how much is the engineering fee. Engineering work is never hidden inside material prices."
+    },
+    "example_label": { "id": "Contoh rincian", "en": "Example breakdown" },
+    "example": [
+      { "label": { "id": "Material",          "en": "Materials" },       "percent": 40 },
+      { "label": { "id": "Komponen",          "en": "Components" },      "percent": 20 },
+      { "label": { "id": "Fabrikasi",         "en": "Fabrication" },     "percent": 20 },
+      { "label": { "id": "Biaya engineering", "en": "Engineering fee" }, "percent": 20 }
+    ]
+  },
+
+  "about": {
+    "title": { "id": "Satu engineer, dari awal sampai selesai", "en": "One engineer, start to finish" },
+    "name": "Dulham",
+    "role": { "id": "Engineer & pendiri EngiFren", "en": "Engineer & founder of EngiFren" },
+    "photo": "",
+    "text": {
+      "id": "Orang yang kamu ajak ngobrol adalah orang yang sama yang menghitung, mendesain, membuat, memprogram, dan menguji alatnya. Tidak ada informasi yang hilang di antara bagian penjualan dan engineer. Berlatar belakang Teknik Kimia ITB, dengan pengalaman di desain 3D dan manufaktur, mekatronika, dan analisis kimia.",
+      "en": "The person you talk to is the same person who calculates, designs, builds, programs, and tests your system. Nothing gets lost between a sales team and the engineers. Background in Chemical Engineering at ITB, with hands-on experience in 3D design and manufacturing, mechatronics, and chemical analysis."
+    }
+  },
+
+  "partners": [],
+
+  "ui": {
+    "skip":          { "id": "Langsung ke isi", "en": "Skip to content" },
+    "nav_projects":  { "id": "Proyek",     "en": "Projects" },
+    "nav_services":  { "id": "Layanan",    "en": "Services" },
+    "nav_workflow":  { "id": "Cara kerja", "en": "How we work" },
+    "nav_costing":   { "id": "Biaya",      "en": "Pricing" },
+    "nav_about":     { "id": "Tentang",    "en": "About" },
+    "nav_contact":   { "id": "Kontak",     "en": "Contact" },
+
+    "cta_whatsapp":  { "id": "Ngobrol lewat WhatsApp", "en": "Chat on WhatsApp" },
+    "cta_projects":  { "id": "Lihat proyek",           "en": "See projects" },
+
+    "projects_title": { "id": "Proyek yang sudah dikerjakan", "en": "Projects we've worked on" },
+    "filter_all":     { "id": "Semua", "en": "All" },
+    "projects_empty": { "id": "Belum ada proyek di kategori ini.", "en": "No projects in this category yet." },
+    "services_title": { "id": "Yang bisa dikerjakan", "en": "What we do" },
+    "workflow_title": { "id": "Dari obrolan sampai alat jadi", "en": "From first chat to working system" },
+    "partners_title": { "id": "Mitra", "en": "Partners" },
+    "contact_title":  { "id": "Ceritakan proyekmu", "en": "Tell us about your project" },
+    "contact_text":   { "id": "Kirim foto, sketsa, atau deskripsi singkat lewat WhatsApp atau email.", "en": "Send a photo, a sketch, or a short description by WhatsApp or email." },
+
+    "confidential":   { "id": "Rahasia klien", "en": "Client confidential" },
+    "confidential_note": {
+      "id": "Detail proyek ini dirahasiakan sesuai kesepakatan dengan klien. Tanyakan langsung untuk gambaran umumnya.",
+      "en": "Details of this project are confidential under our agreement with the client. Ask us directly for an overview."
+    },
+    "with":           { "id": "Bersama", "en": "With" },
+
+    "back":           { "id": "Semua proyek", "en": "All projects" },
+    "tb_client":      { "id": "Klien",       "en": "Client" },
+    "tb_year":        { "id": "Tahun",       "en": "Year" },
+    "tb_status":      { "id": "Status",      "en": "Status" },
+    "tb_disciplines": { "id": "Disiplin",    "en": "Disciplines" },
+    "tb_affiliation": { "id": "Kolaborasi",  "en": "In collaboration with" },
+    "problem":        { "id": "Masalah",     "en": "Problem" },
+    "approach":       { "id": "Pendekatan",  "en": "Approach" },
+    "scope":          { "id": "Lingkup kerja", "en": "Scope of work" },
+    "results":        { "id": "Hasil",       "en": "Results" },
+    "cost_breakdown": { "id": "Rincian biaya", "en": "Cost breakdown" },
+    "cost_note":      { "id": "Proporsi dari total biaya proyek.", "en": "Share of total project cost." },
+    "links":          { "id": "Tautan",      "en": "Links" },
+    "gallery":        { "id": "Galeri",      "en": "Gallery" },
+    "more_projects":  { "id": "Proyek lainnya", "en": "More projects" },
+    "similar_title":  { "id": "Punya kebutuhan serupa?", "en": "Need something similar?" },
+    "similar_message": {
+      "id": "Halo EngiFren, saya lihat proyek \"{title}\" dan ingin ngobrolin kebutuhan serupa.",
+      "en": "Hi EngiFren, I saw the \"{title}\" project and would like to discuss something similar."
+    },
+    "close":          { "id": "Tutup", "en": "Close" }
+  }
+}

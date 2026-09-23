@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="{{ lang }}" data-lang="{{ lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{{ site.brand }} | {{ site.tagline | tx }}{% endblock %}</title>
+<meta name="description" content="{% block description %}{{ site.hero.lead | tx }}{% endblock %}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ site.brand }}">
+<meta property="og:title" content="{{ self.title() }}">
+<meta property="og:description" content="{{ self.description() }}">
+<meta property="og:url" content="{{ page_url }}">
+<meta property="og:image" content="{% block og_image %}{{ site.base_url }}/assets/img/og-default.png{% endblock %}">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="{{ page_url }}">
+<link rel="icon" href="{{ root }}assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{ root }}assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@500;600&family=Poppins:wght@600;700&display=swap">
+<link rel="stylesheet" href="{{ root }}assets/css/style.css">
+<script>
+  /* pick language before first paint: ?lang= beats saved choice beats site default */
+  (function () {
+    var l = new URLSearchParams(location.search).get("lang");
+    try { l = l || localStorage.getItem("engifren-lang"); } catch (e) {}
+    if (l === "id" || l === "en") { document.documentElement.dataset.lang = l; document.documentElement.lang = l; }
+  })();
+</script>
+</head>
+<body>
+<a class="skip" href="#main">{{ ui.skip | t }}</a>
+
+<header class="topbar">
+  <div class="wrap topbar__inner">
+    <a class="brand" href="{{ root }}" aria-label="{{ site.brand }}">
+      <span class="brand__mark">{% include "logo.svg" %}</span>
+      <span class="brand__word">{{ site.brand }}</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="{{ root }}#proyek">{{ ui.nav_projects | t }}</a>
+      <a href="{{ root }}#layanan">{{ ui.nav_services | t }}</a>
+      <a href="{{ root }}#cara-kerja">{{ ui.nav_workflow | t }}</a>
+      {% if show_costing %}<a href="{{ root }}#biaya">{{ ui.nav_costing | t }}</a>{% endif %}
+      <a href="{{ root }}#tentang">{{ ui.nav_about | t }}</a>
+      <a href="{{ root }}#kontak">{{ ui.nav_contact | t }}</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-set-lang="id">ID</button>
+      <button type="button" data-set-lang="en">EN</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+{% block main %}{% endblock %}
+</main>
+
+<footer class="footer">
+  <div class="ruler" aria-hidden="true"></div>
+  <div class="wrap footer__inner">
+    <div>
+      <p class="footer__brand">{{ site.brand }}</p>
+      <p class="footer__tag">{{ site.tagline | t }}</p>
+    </div>
+    <div class="footer__contact">
+      <a {{ wa_attrs(site.contact.whatsapp_message) }}>WhatsApp {{ site.contact.whatsapp_display }}</a>
+      <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>
+      {% for s in site.contact.socials %}<a href="{{ s.url }}" target="_blank" rel="noopener">{{ s.name }}</a>{% endfor %}
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" {{ wa_attrs(site.contact.whatsapp_message) }} aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+</a>
+
+<script src="{{ root }}assets/js/site.js" defer></script>
+</body>
+</html>

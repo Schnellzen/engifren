@@ -1,0 +1,141 @@
+{% extends "base.html" %}
+{% import "macros.html" as m %}
+{% block main %}
+
+<section class="hero">
+  <div class="wrap hero__inner">
+    <div class="hero__text">
+      <h1 class="hero__title">{{ site.tagline | t }}</h1>
+      <p class="hero__lead">{{ site.hero.lead | t }}</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary js-wa" {{ wa_attrs(site.contact.whatsapp_message) }}>{{ ui.cta_whatsapp | t }}</a>
+        <a class="btn btn--ghost" href="#proyek">{{ ui.cta_projects | t }}</a>
+      </div>
+    </div>
+    <figure class="sheet" aria-hidden="true">
+      <div class="sheet__mark">{% include "logo.svg" %}</div>
+      <div class="sheet__dim"><span>{{ site.brand }}</span></div>
+    </figure>
+  </div>
+  <div class="ruler ruler--hero" aria-hidden="true"></div>
+</section>
+
+<section class="section" id="proyek">
+  <div class="wrap">
+    <h2 class="section__title">{{ ui.projects_title | t }}</h2>
+
+    {% if used_disciplines | length > 1 %}
+    <div class="filters" role="group" aria-label="Filter">
+      <button type="button" class="filter is-active" data-filter="all" aria-pressed="true">{{ ui.filter_all | t }}</button>
+      {% for d in used_disciplines %}
+      <button type="button" class="filter" data-filter="{{ d }}" aria-pressed="false">{{ vocab.disciplines[d] | t }}</button>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    <ul class="projects">
+      {% for p in projects %}
+      <li class="pcard" data-disc="{{ p.disciplines | join(' ') }}">
+        <a class="pcard__link" href="projects/{{ p.slug }}/">
+          {{ m.cover(p, "projects/" ~ p.slug ~ "/") }}
+          <div class="pcard__body">
+            <div class="pcard__meta">
+              <span class="status status--{{ p.status }}">{{ vocab.status[p.status] | t }}</span>
+              {% if p.year %}<span class="pcard__year">{{ p.year }}</span>{% endif %}
+              {% if p.confidential %}<span class="lock">{{ ui.confidential | t }}</span>{% endif %}
+            </div>
+            <h3 class="pcard__title">{{ p.title | t }}</h3>
+            {% if p.tagline %}<p class="pcard__tagline">{{ p.tagline | t }}</p>{% endif %}
+            {{ m.tags(p.disciplines) }}
+            {% if p.affiliations %}
+            <p class="pcard__aff">{{ ui.with | t }} {% for a in p.affiliations %}<strong>{{ a.name }}</strong>{% if not loop.last %}, {% endif %}{% endfor %}</p>
+            {% endif %}
+          </div>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    <p class="projects__empty" hidden>{{ ui.projects_empty | t }}</p>
+  </div>
+</section>
+
+<section class="section section--tint" id="layanan">
+  <div class="wrap">
+    <h2 class="section__title">{{ ui.services_title | t }}</h2>
+    <dl class="services">
+      {% for s in site.services %}
+      <div class="service">
+        <dt>{{ s.name | t }}</dt>
+        <dd>{{ s.desc | t }}</dd>
+      </div>
+      {% endfor %}
+    </dl>
+  </div>
+</section>
+
+<section class="section" id="cara-kerja">
+  <div class="wrap">
+    <h2 class="section__title">{{ ui.workflow_title | t }}</h2>
+    <ol class="steps">
+      {% for s in site.workflow %}
+      <li class="step">
+        <span class="step__no">{{ loop.index }}</span>
+        <h3 class="step__name">{{ s.name | t }}</h3>
+        <p class="step__desc">{{ s.desc | t }}</p>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+
+{% if show_costing %}
+<section class="section section--tint" id="biaya">
+  <div class="wrap costing">
+    <div class="costing__text">
+      <h2 class="section__title">{{ site.costing.title | t }}</h2>
+      <p>{{ site.costing.text | t }}</p>
+    </div>
+    <div class="costing__example">
+      <p class="costing__label">{{ site.costing.example_label | t }}</p>
+      {{ m.costbar(site.costing.example) }}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<section class="section" id="tentang">
+  <div class="wrap about">
+    {% if site.about.photo %}
+    <img class="about__photo" src="{{ site.about.photo }}" alt="{{ site.about.name }}" width="280" height="340" loading="lazy">
+    {% endif %}
+    <div class="about__text">
+      <h2 class="section__title">{{ site.about.title | t }}</h2>
+      <p>{{ site.about.text | t }}</p>
+      <p class="about__sign"><strong>{{ site.about.name }}</strong><span>{{ site.about.role | t }}</span></p>
+    </div>
+  </div>
+</section>
+
+{% if site.partners %}
+<section class="section section--tint" id="mitra">
+  <div class="wrap">
+    <h2 class="section__title">{{ ui.partners_title | t }}</h2>
+    <ul class="partners">
+      {% for pt in site.partners %}
+      <li>{% if pt.url %}<a href="{{ pt.url }}" target="_blank" rel="noopener">{% endif %}{% if pt.logo %}<img src="{{ pt.logo }}" alt="{{ pt.name }}" loading="lazy">{% else %}{{ pt.name }}{% endif %}{% if pt.url %}</a>{% endif %}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% endif %}
+
+<section class="section contact" id="kontak">
+  <div class="wrap">
+    <h2 class="section__title">{{ ui.contact_title | t }}</h2>
+    <p class="contact__text">{{ ui.contact_text | t }}</p>
+    <a class="contact__number js-wa" {{ wa_attrs(site.contact.whatsapp_message) }}>{{ site.contact.whatsapp_display }}</a>
+    <p class="contact__mail"><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></p>
+  </div>
+</section>
+
+{% endblock %}

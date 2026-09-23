@@ -1,0 +1,34 @@
+{
+  "slug": "process-trainer",
+  "featured": true,
+
+  "title":   { "id": "Trainer Kontrol Proses Mini", "en": "Mini Process Control Trainer" },
+  "tagline": {
+    "id": "Skid proses ringkas untuk belajar instrumentasi dan kontrol proses secara langsung.",
+    "en": "A compact process skid for hands-on learning of instrumentation and process control."
+  },
+  "status": "prototype",
+
+  "disciplines": ["process", "mechanical", "electronics", "control", "software"],
+  "services": ["mechanical-design", "automation", "prototyping"],
+
+  "problem": {
+    "id": "Belajar kontrol proses biasanya hanya lewat teori dan simulasi, karena peralatan industri terlalu besar dan mahal untuk praktik.",
+    "en": "Process control is usually learned through theory and simulation only, because industrial equipment is too large and expensive for practice."
+  },
+  "approach": {
+    "id": "Sistem proses skala kecil dirancang di atas skid mekanik, dilengkapi instrumentasi, panel kontrol, dan kontroler yang bisa diprogram.",
+    "en": "A small-scale process system built on a mechanical skid, with instrumentation, a control panel, and a programmable controller."
+  },
+  "scope": [
+    { "id": "Desain sistem proses",  "en": "Process system design" },
+    { "id": "Skid mekanik",          "en": "Mechanical skid" },
+    { "id": "Instrumentasi",         "en": "Instrumentation" },
+    { "id": "Panel kontrol",         "en": "Control panel" },
+    { "id": "Elektronik",            "en": "Electronics" },
+    { "id": "Kontrol terprogram",    "en": "Programmable control" }
+  ],
+  "results": [],
+  "links": [],
+  "media": { "cover": "", "gallery": [] }
+}

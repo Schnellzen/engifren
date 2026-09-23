@@ -1,0 +1,34 @@
+{
+  "slug": "food-3d-printer",
+  "featured": true,
+
+  "title":   { "id": "Printer 3D Makanan Multi-Material", "en": "Multi-Material Food 3D Printer" },
+  "tagline": {
+    "id": "Printer 3D yang dimodifikasi untuk mencetak bahan makanan dengan ekstruder khusus.",
+    "en": "A 3D printer modified to print food materials with a custom extruder."
+  },
+  "status": "prototype",
+
+  "disciplines": ["mechanical", "electronics", "software", "fabrication"],
+  "services": ["mechanical-design", "prototyping", "troubleshooting"],
+
+  "problem": {
+    "id": "Printer 3D biasa dirancang untuk filamen plastik, tidak untuk bahan makanan berbentuk pasta dengan beberapa material sekaligus.",
+    "en": "Standard 3D printers are built for plastic filament, not for paste-like food materials, let alone several materials at once."
+  },
+  "approach": {
+    "id": "Mekanisme ekstrusi dirancang ulang, motor dan driver dipilih ulang, dan firmware disesuaikan untuk mengontrol beberapa material.",
+    "en": "The extrusion mechanism was redesigned, motors and drivers were reselected, and the firmware was adapted for multi-material control."
+  },
+  "scope": [
+    { "id": "Modifikasi mekanik",           "en": "Mechanical modification" },
+    { "id": "Mekanisme ekstrusi custom",    "en": "Custom extrusion mechanism" },
+    { "id": "Pemilihan motor dan driver",   "en": "Motor and driver selection" },
+    { "id": "Firmware",                     "en": "Firmware" },
+    { "id": "Kontrol multi-material",       "en": "Multi-material control" },
+    { "id": "Fabrikasi dan troubleshooting","en": "Fabrication and troubleshooting" }
+  ],
+  "results": [],
+  "links": [],
+  "media": { "cover": "", "gallery": [] }
+}

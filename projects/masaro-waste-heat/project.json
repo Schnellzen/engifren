@@ -1,0 +1,39 @@
+{
+  "slug": "masaro-waste-heat",
+  "featured": true,
+
+  "title":   { "id": "Pemanfaatan Panas Buang Insinerator", "en": "Incinerator Waste-Heat Recovery" },
+  "tagline": {
+    "id": "Heat exchanger untuk memanfaatkan panas buang insinerator pada proses produksi RDF.",
+    "en": "A heat exchanger that recovers waste heat from an incinerator in an RDF production line."
+  },
+  "status": "ongoing",
+
+  "affiliations": [
+    { "name": "MASARO" }
+  ],
+
+  "disciplines": ["process", "mechanical", "electronics", "control"],
+  "services": ["process-engineering", "mechanical-design", "automation", "prototyping"],
+
+  "problem": {
+    "id": "Gas buang insinerator membawa panas yang terbuang begitu saja, padahal proses produksi RDF membutuhkan energi panas.",
+    "en": "The incinerator's flue gas carries heat that is simply lost, while the RDF production process needs thermal energy."
+  },
+  "approach": {
+    "id": "Konsep proses dan perhitungan perpindahan panas, divalidasi dengan simulasi CFD, lalu diterjemahkan menjadi desain mekanik heat exchanger lengkap dengan blower dan monitoring suhu berbasis ESP32.",
+    "en": "Process concept and heat-transfer calculations, validated with CFD, then turned into a mechanical heat-exchanger design with a blower and ESP32-based temperature monitoring."
+  },
+  "scope": [
+    { "id": "Konsep proses",                  "en": "Process concept" },
+    { "id": "Perhitungan perpindahan panas",  "en": "Heat-transfer calculations" },
+    { "id": "Simulasi CFD",                   "en": "CFD simulation" },
+    { "id": "Desain mekanik heat exchanger",  "en": "Heat-exchanger mechanical design" },
+    { "id": "Pemilihan blower",               "en": "Blower selection" },
+    { "id": "Monitoring suhu (ESP32)",        "en": "Temperature monitoring (ESP32)" },
+    { "id": "Pengujian",                      "en": "Testing" }
+  ],
+  "results": [],
+  "links": [],
+  "media": { "cover": "", "gallery": [] }
+}
