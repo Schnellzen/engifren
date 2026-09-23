@@ -1,0 +1,48 @@
+{
+  "slug": "wet-gas-meter",
+  "featured": false,
+  "title": {
+    "id": "Wet Gas Meter Tipe Drum",
+    "en": "Drum-Type Wet Gas Meter"
+  },
+  "tagline": {
+    "id": "Gas meter tipe drum berbiaya rendah dengan penghitung putaran digital.",
+    "en": "A low-cost drum-type gas meter with digital rotation counting."
+  },
+  "status": "prototype",
+  "year": 2026,
+  "disciplines": [
+    "mechanical",
+    "electronics",
+    "fabrication"
+  ],
+  "services": [
+    "mechanical-design",
+    "automation",
+    "prototyping"
+  ],
+  "approach": {
+    "id": "Putaran drum dibaca encoder magnetik AS5600 dan diolah Wemos D1 mini (ESP8266). Housing-nya di atas dasar akrilik dengan bearing keramik, lengkap dengan bubble leveler dan katup penutup. Desainnya berkembang dari versi ringkas ke ukuran standar pasar.",
+    "en": "Drum rotation is read by an AS5600 magnetic encoder and processed by a Wemos D1 mini (ESP8266). The housing sits on an acrylic base with a ceramic bearing, with a bubble leveler and a shut-off valve. The design grew from a compact version to a market-size one."
+  },
+  "scope": [
+    {
+      "id": "Desain drum dan housing",
+      "en": "Drum and housing design"
+    },
+    {
+      "id": "Bubble leveler dan katup penutup",
+      "en": "Bubble leveler and shut-off valve"
+    },
+    {
+      "id": "Elektronik penghitung putaran",
+      "en": "Rotation-counting electronics"
+    }
+  ],
+  "results": [],
+  "links": [],
+  "media": {
+    "cover": "",
+    "gallery": []
+  }
+}

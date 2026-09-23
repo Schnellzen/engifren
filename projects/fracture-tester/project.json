@@ -1,0 +1,85 @@
+{
+  "slug": "fracture-tester",
+  "featured": false,
+  "title": {
+    "id": "Alat Uji Patah dan Tekan",
+    "en": "Fracture and Compression Tester"
+  },
+  "tagline": {
+    "id": "Mesin uji dengan dua motor stepper untuk uji patah spesimen kecil (maks. 30×50×50 mm).",
+    "en": "A dual-stepper test machine for fracture testing of small specimens (max 30×50×50 mm)."
+  },
+  "status": "prototype",
+  "year": 2025,
+  "disciplines": [
+    "mechanical",
+    "electronics",
+    "fabrication"
+  ],
+  "services": [
+    "mechanical-design",
+    "automation",
+    "prototyping"
+  ],
+  "approach": {
+    "id": "Dua motor NEMA 23 dengan planetary gear menggerakkan crosshead lewat lead screw. Beban dibaca load cell S-type 500 kg lewat ESP32 dan PCB custom, semuanya di rangka profil aluminium 2040.",
+    "en": "Two NEMA 23 motors with planetary gears drive the crosshead through lead screws. Load is read by a 500 kg S-type load cell through an ESP32 and a custom PCB, all on a 2040 aluminium profile frame."
+  },
+  "scope": [
+    {
+      "id": "Desain mekanik",
+      "en": "Mechanical design"
+    },
+    {
+      "id": "Rangka profil aluminium",
+      "en": "Aluminium profile frame"
+    },
+    {
+      "id": "Sistem penggerak dua stepper",
+      "en": "Dual-stepper drive system"
+    },
+    {
+      "id": "PCB custom",
+      "en": "Custom PCB"
+    },
+    {
+      "id": "Integrasi load cell",
+      "en": "Load cell integration"
+    }
+  ],
+  "results": [
+    {
+      "label": {
+        "id": "Beban maksimum",
+        "en": "Max load"
+      },
+      "value": "200 kgf (600 kgf upgrade)"
+    },
+    {
+      "label": {
+        "id": "Resolusi",
+        "en": "Resolution"
+      },
+      "value": "20 gf"
+    },
+    {
+      "label": {
+        "id": "Kecepatan crosshead",
+        "en": "Crosshead speed"
+      },
+      "value": "0–50 mm/min"
+    },
+    {
+      "label": {
+        "id": "Stroke",
+        "en": "Stroke"
+      },
+      "value": "100 mm"
+    }
+  ],
+  "links": [],
+  "media": {
+    "cover": "",
+    "gallery": []
+  }
+}

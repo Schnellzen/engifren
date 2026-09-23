@@ -1,0 +1,70 @@
+{
+  "slug": "pyrolysis-test-rigs",
+  "featured": false,
+  "title": {
+    "id": "Reaktor Pirolisis dan Rig Uji Nyala",
+    "en": "Pyrolysis Reactor and Combustion Test Rig"
+  },
+  "tagline": {
+    "id": "Reaktor pirolisis skala lab dan rig uji nyala, keduanya dengan pencatatan massa real-time lewat load cell.",
+    "en": "A lab-scale pyrolysis reactor and a combustion test rig, both with real-time mass logging through a load cell."
+  },
+  "status": "prototype",
+  "year": 2025,
+  "disciplines": [
+    "process",
+    "mechanical",
+    "electronics",
+    "software"
+  ],
+  "services": [
+    "mechanical-design",
+    "automation",
+    "prototyping",
+    "troubleshooting"
+  ],
+  "approach": {
+    "id": "EngiFren merancang reaktornya, terutama penambahan sistem monitoring massa: load cell yang merekam penurunan massa secara real-time selama proses. Reaktor dilengkapi kondensor, pemegang katalis, dan termokopel, dan data dari ESP32 ditampilkan di web plotter serta dikirim lewat Bluetooth. Rig uji nyala memakai pola yang sama: sampel digantung di load cell dan dipanaskan heating band, dengan blower, termokopel, dan jendela pengamatan. Bagian tersulitnya noise dan drift load cell di dekat panas, yang diselesaikan lewat perbaikan grounding, kapasitor filter, uji beberapa varian HX711 dan library, sampai uji drift di 350 °C.",
+    "en": "EngiFren designed the reactor, especially the added mass monitoring: a load cell that records mass loss in real time during the run. The reactor has a condenser, a catalyst holder, and a thermocouple, and data from an ESP32 is shown on a web plotter and sent over Bluetooth. The combustion rig follows the same idea: the sample hangs from a load cell and is heated by a heating band, with a blower, a thermocouple, and a viewing window. The hardest part was load-cell noise and drift near the heat, solved through grounding fixes, filter capacitors, trying several HX711 boards and libraries, and a drift test at 350 °C."
+  },
+  "scope": [
+    {
+      "id": "Desain reaktor",
+      "en": "Reactor design"
+    },
+    {
+      "id": "Sistem monitoring massa (load cell)",
+      "en": "Mass monitoring system (load cell)"
+    },
+    {
+      "id": "Kondensor (V1 ke V2)",
+      "en": "Condenser (V1 to V2)"
+    },
+    {
+      "id": "Wire-mesh press dan pemegang katalis",
+      "en": "Wire-mesh press and catalyst holder"
+    },
+    {
+      "id": "Rangkaian sinyal load cell",
+      "en": "Load-cell signal circuit"
+    },
+    {
+      "id": "Firmware ESP32",
+      "en": "ESP32 firmware"
+    },
+    {
+      "id": "Web plotter dan logging Bluetooth",
+      "en": "Web plotter and Bluetooth logging"
+    },
+    {
+      "id": "Rig uji nyala",
+      "en": "Combustion test rig"
+    }
+  ],
+  "results": [],
+  "links": [],
+  "media": {
+    "cover": "",
+    "gallery": []
+  }
+}

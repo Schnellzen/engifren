@@ -1,0 +1,61 @@
+{
+  "slug": "temperature-monitor",
+  "featured": false,
+  "title": {
+    "id": "Monitor Suhu 5 Kanal",
+    "en": "5-Channel Temperature Monitor"
+  },
+  "tagline": {
+    "id": "Alat monitor suhu 5 kanal untuk proses bersuhu tinggi, plus pembaca termokopel portabel.",
+    "en": "A 5-channel temperature monitor for high-temperature processes, plus a portable thermocouple reader."
+  },
+  "status": "prototype",
+  "year": 2026,
+  "disciplines": [
+    "electronics",
+    "mechanical"
+  ],
+  "services": [
+    "automation",
+    "prototyping"
+  ],
+  "approach": {
+    "id": "ESP32 membaca 5 termokopel tipe K lewat MAX6675 dan menampilkannya di layar TFT 2,4\" (ILI9341), dalam panel 220 VAC. Ada opsi standar dan presisi tinggi. Selain itu ada pembaca termokopel digital bertenaga baterai AA dengan dudukan ulir M8.",
+    "en": "An ESP32 reads 5 K-type thermocouples through MAX6675 boards and shows them on a 2.4\" TFT (ILI9341), in a 220 VAC panel. It comes in standard and high-precision options. There is also a digital thermocouple reader powered by AA batteries, with an M8 thread mount."
+  },
+  "scope": [
+    {
+      "id": "Monitor suhu 5 kanal",
+      "en": "5-channel temperature monitor"
+    },
+    {
+      "id": "Panel 220 VAC",
+      "en": "220 VAC panel"
+    },
+    {
+      "id": "Pembaca termokopel portabel",
+      "en": "Portable thermocouple reader"
+    }
+  ],
+  "results": [
+    {
+      "label": {
+        "id": "Rentang ukur monitor",
+        "en": "Monitor range"
+      },
+      "value": "0–1000 °C"
+    },
+    {
+      "label": {
+        "id": "Rentang pembaca portabel",
+        "en": "Portable reader range"
+      },
+      "value": "up to 1300 °C"
+    }
+  ],
+  "links": [],
+  "media": {
+    "cover": "",
+    "gallery": []
+  }
+}

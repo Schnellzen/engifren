@@ -1,0 +1,52 @@
+{
+  "slug": "coil-heat-exchanger-rig",
+  "featured": false,
+  "title": {
+    "id": "Rig Uji Heat Exchanger Koil",
+    "en": "Coil Heat Exchanger Test Rig"
+  },
+  "tagline": {
+    "id": "Rig uji heat exchanger koil tembaga dengan katup servo dan control box.",
+    "en": "A copper-coil heat exchanger test rig with a servo valve and control box."
+  },
+  "status": "prototype",
+  "year": 2025,
+  "disciplines": [
+    "process",
+    "mechanical",
+    "electronics"
+  ],
+  "services": [
+    "mechanical-design",
+    "automation",
+    "prototyping"
+  ],
+  "approach": {
+    "id": "Heat exchanger koil tembaga dipasang bersama reaktor dummy dan bak, dengan aliran diatur katup servo. Kontrolnya memakai control box V3 dengan casing PCB custom.",
+    "en": "A copper-coil heat exchanger is set up with a dummy reactor and buckets, with flow set by a servo valve. Control runs on the V3 control box with a custom PCB casing."
+  },
+  "scope": [
+    {
+      "id": "Desain heat exchanger koil tembaga",
+      "en": "Copper-coil heat exchanger design"
+    },
+    {
+      "id": "Reaktor dummy",
+      "en": "Dummy reactor"
+    },
+    {
+      "id": "Katup servo",
+      "en": "Servo valve"
+    },
+    {
+      "id": "Control box dan casing PCB",
+      "en": "Control box and PCB casing"
+    }
+  ],
+  "results": [],
+  "links": [],
+  "media": {
+    "cover": "",
+    "gallery": []
+  }
+}

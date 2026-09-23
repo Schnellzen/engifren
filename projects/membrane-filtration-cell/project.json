@@ -1,0 +1,50 @@
+{
+  "slug": "membrane-filtration-cell",
+  "featured": false,
+  "title": {
+    "id": "Sel Filtrasi Membran Dead-End",
+    "en": "Dead-End Membrane Filtration Cell"
+  },
+  "tagline": {
+    "id": "Sel filtrasi membran stainless bertekanan gas untuk uji skala lab.",
+    "en": "A gas-pressurized stainless steel membrane filtration cell for lab-scale testing."
+  },
+  "status": "prototype",
+  "year": 2026,
+  "disciplines": [
+    "process",
+    "mechanical"
+  ],
+  "services": [
+    "mechanical-design",
+    "prototyping"
+  ],
+  "approach": {
+    "id": "Chamber stainless dengan gasket PTFE, membran, dan penampung permeat. Tekanan diberikan dari tabung gas, diatur needle valve dan dibaca pressure gauge ½\" NPT, dan selnya diletakkan di atas hot plate.",
+    "en": "A stainless steel chamber with a PTFE gasket, membrane, and permeate collector. Pressure comes from a gas bottle, set with a needle valve and read on a ½\" NPT pressure gauge, and the cell sits on a hot plate."
+  },
+  "scope": [
+    {
+      "id": "Desain chamber dan gasket",
+      "en": "Chamber and gasket design"
+    },
+    {
+      "id": "Penampung permeat",
+      "en": "Permeate collector"
+    },
+    {
+      "id": "Sistem tekanan dan instrumen",
+      "en": "Pressure system and instruments"
+    },
+    {
+      "id": "Gambar teknik dan animasi",
+      "en": "Technical drawings and animations"
+    }
+  ],
+  "results": [],
+  "links": [],
+  "media": {
+    "cover": "",
+    "gallery": []
+  }
+}

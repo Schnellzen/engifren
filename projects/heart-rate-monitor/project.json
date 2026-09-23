@@ -21,8 +21,8 @@
     "en": "The research team had the idea and the math, but no physical device to test it with. They needed someone to build a prototype that actually works."
   },
   "approach": {
-    "id": "EngiFren mengerjakan seluruh hardware, dari pemilihan komponen, wiring, firmware, sampai enclosure 3D print dan perakitan. Sistemnya berbasis ESP32 dengan sensor MAX30102 dan baterai 18650. Klip jarinya dicetak print-in-place, jadi langsung jadi tanpa perakitan dan murah untuk diproduksi.",
-    "en": "EngiFren handled the whole hardware side, from component selection, wiring and firmware to the 3D-printed enclosure and assembly. The system runs on an ESP32 with a MAX30102 sensor and 18650 batteries. The finger clip is printed in place, so it comes off the printer ready to use and is cheap to manufacture."
+    "id": "EngiFren mengerjakan seluruh hardware, dari pemilihan komponen, wiring, firmware, sampai enclosure 3D print dan perakitan. Sistemnya berbasis ESP32 dengan sensor MAX30102, baterai 18650 dengan modul charger, tombol, dan port micro-USB. Klip jarinya dicetak print-in-place, jadi langsung jadi tanpa perakitan dan murah untuk diproduksi.",
+    "en": "EngiFren handled the whole hardware side, from component selection, wiring and firmware to the 3D-printed enclosure and assembly. The system runs on an ESP32 with a MAX30102 sensor, 18650 batteries with a charger module, a push button, and a micro-USB port. The finger clip is printed in place, so it comes off the printer ready to use and is cheap to manufacture."
   },
   "scope": [
     { "id": "Desain CAD enclosure",   "en": "CAD enclosure design" },

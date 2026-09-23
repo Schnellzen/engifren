@@ -1,0 +1,50 @@
+{
+  "slug": "turbine-blade-handling",
+  "featured": false,
+  "title": {
+    "id": "Perlengkapan Handling Sudu Turbin",
+    "en": "Turbine Blade Handling Kit"
+  },
+  "tagline": {
+    "id": "Kotak transport, kotak kerja, dan rig poros untuk menangani sudu turbin.",
+    "en": "A transport box, a work box, and a shaft rig for handling turbine blades."
+  },
+  "status": "prototype",
+  "year": 2025,
+  "disciplines": [
+    "mechanical",
+    "fabrication"
+  ],
+  "services": [
+    "mechanical-design",
+    "prototyping"
+  ],
+  "approach": {
+    "id": "Kotak transport dari plywood 18/9 mm dengan insert foam dan grid 3×8 kompartemen, disempurnakan lewat 6 iterasi. Kotak kerja punya ragum putar, lead screw dengan NEMA 23, dan roller V-groove untuk memegang sudu. Rig poros memakai poros utama D50×1500 mm dengan bearing 6210/6804 di rangka hollow 30×30.",
+    "en": "The transport box is 18/9 mm plywood with foam inserts and a 3×8 compartment grid, refined over 6 iterations. The work box has a rotating vise, a NEMA 23 lead screw, and V-groove rollers to hold the blade. The shaft rig uses a D50×1500 mm main shaft with 6210/6804 bearings on a 30×30 hollow-section frame."
+  },
+  "scope": [
+    {
+      "id": "Kotak transport (v1 sampai v1.5)",
+      "en": "Transport box (v1 to v1.5)"
+    },
+    {
+      "id": "Kotak kerja dengan ragum putar",
+      "en": "Work box with rotating vise"
+    },
+    {
+      "id": "Rig poros dan gauge",
+      "en": "Shaft and gauge rig"
+    },
+    {
+      "id": "Fixture pivot dovetail",
+      "en": "Dovetail pivot fixture"
+    }
+  ],
+  "results": [],
+  "links": [],
+  "media": {
+    "cover": "",
+    "gallery": []
+  }
+}

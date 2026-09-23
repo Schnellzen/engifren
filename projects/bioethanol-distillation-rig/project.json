@@ -1,0 +1,57 @@
+{
+  "slug": "bioethanol-distillation-rig",
+  "featured": false,
+  "title": {
+    "id": "Rig Distilasi Bioetanol",
+    "en": "Bioethanol Distillation Rig"
+  },
+  "tagline": {
+    "id": "Rig bench-top untuk proses bioetanol: boiler, reaktor, separator, dan kontrol pemanas.",
+    "en": "A bench-top bioethanol rig: boiler, reactor, separator, and heater control."
+  },
+  "status": "prototype",
+  "year": 2025,
+  "disciplines": [
+    "process",
+    "mechanical",
+    "electronics",
+    "control"
+  ],
+  "services": [
+    "mechanical-design",
+    "automation",
+    "prototyping"
+  ],
+  "approach": {
+    "id": "Boiler, pipa reaktor, tangki separator, dan holder desikan disusun di atas base kayu sekitar 58×32 cm. Umpan masuk lewat spuit 120 ml, dan pemanas dikontrol SSR dengan pembacaan suhu termokopel MAX6675 di control box.",
+    "en": "A boiler, reactor pipes, a separator tank, and a desiccant holder are laid out on a wooden base of about 58×32 cm. Feed goes in through a 120 ml syringe, and the heater is controlled by an SSR with MAX6675 thermocouple readings in the control box."
+  },
+  "scope": [
+    {
+      "id": "Desain layout rig",
+      "en": "Rig layout design"
+    },
+    {
+      "id": "Boiler dan pipa reaktor",
+      "en": "Boiler and reactor pipes"
+    },
+    {
+      "id": "Separator dan holder desikan",
+      "en": "Separator and desiccant holder"
+    },
+    {
+      "id": "Control box (V3)",
+      "en": "Control box (V3)"
+    },
+    {
+      "id": "Kontrol pemanas SSR",
+      "en": "SSR heater control"
+    }
+  ],
+  "results": [],
+  "links": [],
+  "media": {
+    "cover": "",
+    "gallery": []
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "slug": "plastic-tensile-testing-kit",
+  "featured": false,
+  "title": {
+    "id": "Kit Uji Tarik Plastik",
+    "en": "Plastic Tensile Testing Kit"
+  },
+  "tagline": {
+    "id": "Mesin uji tarik desktop dan cetakan spesimen ASTM D638 Tipe V, lalu dikembangkan untuk uji lentur 3 titik.",
+    "en": "A desktop tensile tester and an ASTM D638 Type V specimen mold, later extended for 3-point bending."
+  },
+  "status": "completed",
+  "year": 2025,
+  "disciplines": [
+    "mechanical",
+    "electronics",
+    "software",
+    "fabrication"
+  ],
+  "services": [
+    "mechanical-design",
+    "automation",
+    "prototyping"
+  ],
+  "approach": {
+    "id": "Rangkanya dari profil aluminium 2040/2060 dengan lead screw 8 mm, digerakkan stepper lewat driver TB6600, dan gayanya dibaca load cell. Firmware menerima perintah berbasis kode, dan data direkam ke komputer lewat serial. Spesimennya dibuat pakai cetakan dua bagian yang diisi langsung dari extruder, dengan bushing pemandu dan baut supaya kedua sisinya presisi. Belakangan ditambah jig untuk uji lentur 3 titik.",
+    "en": "The frame uses 2040/2060 aluminium profile with an 8 mm lead screw, driven by a stepper through a TB6600 driver, with force read by a load cell. The firmware takes code-based commands, and data is logged to a computer over serial. Specimens are made in a two-part mold filled straight from an extruder, with guide bushings and bolts to keep both halves aligned. A 3-point bending jig was added later."
+  },
+  "scope": [
+    {
+      "id": "Desain mekanik dan rangka",
+      "en": "Mechanical design and frame"
+    },
+    {
+      "id": "Grip spesimen",
+      "en": "Specimen grips"
+    },
+    {
+      "id": "Elektronik dan firmware",
+      "en": "Electronics and firmware"
+    },
+    {
+      "id": "Logging data",
+      "en": "Data logging"
+    },
+    {
+      "id": "Cetakan spesimen dan adapter nozzle extruder",
+      "en": "Specimen mold and extruder nozzle adapter"
+    },
+    {
+      "id": "Jig uji lentur 3 titik",
+      "en": "3-point bending jig"
+    },
+    {
+      "id": "Manual pengguna",
+      "en": "User manual"
+    }
+  ],
+  "results": [],
+  "links": [],
+  "media": {
+    "cover": "",
+    "gallery": []
+  }
+}

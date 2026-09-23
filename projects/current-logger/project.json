@@ -1,0 +1,48 @@
+{
+  "slug": "current-logger",
+  "featured": false,
+  "title": {
+    "id": "Logger Arus Listrik",
+    "en": "Current Logger"
+  },
+  "tagline": {
+    "id": "Logger arus portabel dengan sensor hall split-core, dalam casing 3D print.",
+    "en": "A portable current logger with a split-core hall sensor, in a 3D-printed case."
+  },
+  "status": "prototype",
+  "year": 2024,
+  "disciplines": [
+    "electronics",
+    "mechanical",
+    "fabrication"
+  ],
+  "services": [
+    "automation",
+    "mechanical-design",
+    "prototyping"
+  ],
+  "approach": {
+    "id": "Arus dibaca sensor hall split-core HSTS016L (±15 A) dan ditampilkan di LCD. Semuanya masuk ke casing 3D print dengan tutup LCD dan tutup baterai.",
+    "en": "Current is read by an HSTS016L split-core hall sensor (±15 A) and shown on an LCD. Everything fits in a 3D-printed case with LCD and battery lids."
+  },
+  "scope": [
+    {
+      "id": "Pemilihan sensor",
+      "en": "Sensor selection"
+    },
+    {
+      "id": "Elektronik",
+      "en": "Electronics"
+    },
+    {
+      "id": "Casing 3D print",
+      "en": "3D-printed case"
+    }
+  ],
+  "results": [],
+  "links": [],
+  "media": {
+    "cover": "",
+    "gallery": []
+  }
+}

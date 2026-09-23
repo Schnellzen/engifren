@@ -1,34 +1,88 @@
 {
   "slug": "process-trainer",
   "featured": true,
-
-  "title":   { "id": "Trainer Kontrol Proses Mini", "en": "Mini Process Control Trainer" },
+  "title": {
+    "id": "Trainer Kontrol Proses Mini",
+    "en": "Mini Process Control Trainer"
+  },
   "tagline": {
     "id": "Skid proses ringkas untuk belajar instrumentasi dan kontrol proses secara langsung.",
     "en": "A compact process skid for hands-on learning of instrumentation and process control."
   },
   "status": "prototype",
-
-  "disciplines": ["process", "mechanical", "electronics", "control", "software"],
-  "services": ["mechanical-design", "automation", "prototyping"],
-
+  "disciplines": [
+    "process",
+    "mechanical",
+    "electronics",
+    "control",
+    "software"
+  ],
+  "services": [
+    "mechanical-design",
+    "automation",
+    "prototyping"
+  ],
   "problem": {
     "id": "Belajar kontrol proses biasanya hanya lewat teori dan simulasi, karena peralatan industri terlalu besar dan mahal untuk praktik.",
     "en": "Process control is usually learned through theory and simulation only, because industrial equipment is too large and expensive for practice."
   },
   "approach": {
-    "id": "Sistem proses skala kecil dirancang di atas skid mekanik, dilengkapi instrumentasi, panel kontrol, dan kontroler yang bisa diprogram.",
-    "en": "A small-scale process system built on a mechanical skid, with instrumentation, a control panel, and a programmable controller."
+    "id": "Sistem proses skala kecil di atas skid 250×160×80 cm, dengan 2 tangki proses akrilik 3 L, 2 tangki buffer sekitar 20 L, dan 3 jalur pompa independen yang sengaja dibuat berlebih supaya gangguannya terasa nyata. Jalurnya bisa diatur ulang (single loop, bypass, cross-feed), dan kontrolnya bisa dari on-off, PID, sampai cascade, fuzzy, atau MPC.",
+    "en": "A small-scale process system on a 250×160×80 cm skid, with 2 acrylic 3 L process tanks, 2 buffer tanks of about 20 L, and 3 independent pump lines deliberately oversized so disturbances feel real. The flow paths can be reconfigured (single loop, bypass, cross-feed), and control goes from on-off to PID, up to cascade, fuzzy, or MPC."
   },
   "scope": [
-    { "id": "Desain sistem proses",  "en": "Process system design" },
-    { "id": "Skid mekanik",          "en": "Mechanical skid" },
-    { "id": "Instrumentasi",         "en": "Instrumentation" },
-    { "id": "Panel kontrol",         "en": "Control panel" },
-    { "id": "Elektronik",            "en": "Electronics" },
-    { "id": "Kontrol terprogram",    "en": "Programmable control" }
+    {
+      "id": "Desain sistem proses",
+      "en": "Process system design"
+    },
+    {
+      "id": "Skid mekanik",
+      "en": "Mechanical skid"
+    },
+    {
+      "id": "Instrumentasi",
+      "en": "Instrumentation"
+    },
+    {
+      "id": "Panel kontrol",
+      "en": "Control panel"
+    },
+    {
+      "id": "Elektronik",
+      "en": "Electronics"
+    },
+    {
+      "id": "Kontrol terprogram",
+      "en": "Programmable control"
+    }
   ],
-  "results": [],
+  "results": [
+    {
+      "label": {
+        "id": "Transmitter level ultrasonik",
+        "en": "Ultrasonic level transmitters"
+      },
+      "value": "4"
+    },
+    {
+      "label": {
+        "id": "Transmitter aliran hall-effect",
+        "en": "Hall-effect flow transmitters"
+      },
+      "value": "5"
+    },
+    {
+      "label": {
+        "id": "Jalur pompa independen",
+        "en": "Independent pump lines"
+      },
+      "value": "3"
+    }
+  ],
   "links": [],
-  "media": { "cover": "", "gallery": [] }
+  "media": {
+    "cover": "",
+    "gallery": []
+  },
+  "year": 2026
 }

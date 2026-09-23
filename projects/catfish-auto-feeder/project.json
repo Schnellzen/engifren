@@ -1,0 +1,56 @@
+{
+  "slug": "catfish-auto-feeder",
+  "featured": false,
+  "title": {
+    "id": "Pemberi Pakan Lele Otomatis",
+    "en": "Automatic Catfish Feeder"
+  },
+  "tagline": {
+    "id": "Alat pemberi pakan pelet otomatis untuk kolam lele, dengan hopper galon 15 L.",
+    "en": "An automatic pellet feeder for catfish ponds, built around a 15 L gallon hopper."
+  },
+  "status": "prototype",
+  "year": 2025,
+  "disciplines": [
+    "mechanical",
+    "electronics",
+    "fabrication"
+  ],
+  "services": [
+    "mechanical-design",
+    "automation",
+    "prototyping"
+  ],
+  "approach": {
+    "id": "Pelet ditakar oleh rotary feeder yang digerakkan servo, lalu dilempar ke kolam oleh motor DC 12 V. Ada limit switch, pengecekan level pakan, dan sensor riak air. Desainnya berkembang lewat beberapa versi: dari konsep awal, ke versi yang lebih mudah diproduksi, lalu ke penggerak langsung (direct drive).",
+    "en": "Pellets are metered by a servo-driven rotary feeder, then thrown into the pond by a 12 V DC motor. It has limit switches, a feed level check, and a water ripple sensor. The design went through several versions: from the first concept, to a design for manufacturing, then to a direct-drive version."
+  },
+  "scope": [
+    {
+      "id": "Desain CAD dan iterasi (V1 sampai V2.2)",
+      "en": "CAD design and iterations (V1 to V2.2)"
+    },
+    {
+      "id": "Rotary feeder dan pelempar pelet",
+      "en": "Rotary feeder and pellet thrower"
+    },
+    {
+      "id": "Box elektronik dan PCB",
+      "en": "Electronics box and PCB"
+    },
+    {
+      "id": "Bracket PCB dan LED",
+      "en": "PCB and LED brackets"
+    },
+    {
+      "id": "Junction box",
+      "en": "Junction box"
+    }
+  ],
+  "results": [],
+  "links": [],
+  "media": {
+    "cover": "",
+    "gallery": []
+  }
+}
