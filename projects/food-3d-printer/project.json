@@ -2,33 +2,33 @@
   "slug": "food-3d-printer",
   "featured": true,
 
-  "title":   { "id": "Printer 3D Makanan Multi-Material", "en": "Multi-Material Food 3D Printer" },
+  "title":   { "id": "Printer 3D Makanan Tiga Material", "en": "Tri-Material Food 3D Printer" },
   "tagline": {
-    "id": "Printer 3D yang dimodifikasi untuk mencetak bahan makanan dengan ekstruder khusus.",
-    "en": "A 3D printer modified to print food materials with a custom extruder."
+    "id": "Printer 3D makanan dengan tiga spuit yang bermuara ke satu nozel, untuk mencetak produk berlapis seperti analog daging.",
+    "en": "A food 3D printer with three syringes feeding one nozzle, for printing layered products like meat analogs."
   },
   "status": "prototype",
 
   "disciplines": ["mechanical", "electronics", "software", "fabrication"],
-  "services": ["mechanical-design", "prototyping", "troubleshooting"],
+  "services": ["mechanical-design", "automation", "prototyping"],
 
   "problem": {
-    "id": "Printer 3D biasa dirancang untuk filamen plastik, tidak untuk bahan makanan berbentuk pasta dengan beberapa material sekaligus.",
-    "en": "Standard 3D printers are built for plastic filament, not for paste-like food materials, let alone several materials at once."
+    "id": "Printer makanan multi-material biasanya pakai beberapa nozel terpisah yang rumit, atau satu nozel dengan purge tower yang membuang bahan setiap ganti material. Untuk makanan, bahan yang terbuang itu mahal dan sayang.",
+    "en": "Multi-material food printers usually rely on several separate nozzles, which adds complexity, or on one nozzle with a purge tower that throws material away at every change. With food, that wasted material is costly."
   },
   "approach": {
-    "id": "Mekanisme ekstrusi dirancang ulang, motor dan driver dipilih ulang, dan firmware disesuaikan untuk mengontrol beberapa material.",
-    "en": "The extrusion mechanism was redesigned, motors and drivers were reselected, and the firmware was adapted for multi-material control."
+    "id": "Tiga spuit digerakkan motor masing-masing secara independen, lalu jalurnya disatukan sebelum nozel tunggal. Perpindahan antar material diatur lewat firmware, jadi tidak perlu purge tower dan bahan tidak terbuang. Salah satu aplikasinya: mencetak analog daging dengan bahan lemak, protein, dan serat untuk meniru serat otot dan marbling.",
+    "en": "Three syringes are each driven by their own motor, and their paths merge before a single nozzle. Material changes are handled in firmware, so there is no purge tower and no wasted food. One target application: printing meat analogs from fat, protein, and fiber materials to mimic muscle fiber and marbling."
   },
   "scope": [
-    { "id": "Modifikasi mekanik",           "en": "Mechanical modification" },
-    { "id": "Mekanisme ekstrusi custom",    "en": "Custom extrusion mechanism" },
-    { "id": "Pemilihan motor dan driver",   "en": "Motor and driver selection" },
-    { "id": "Firmware",                     "en": "Firmware" },
-    { "id": "Kontrol multi-material",       "en": "Multi-material control" },
-    { "id": "Fabrikasi dan troubleshooting","en": "Fabrication and troubleshooting" }
+    { "id": "Desain mekanik kepala cetak",    "en": "Print head mechanical design" },
+    { "id": "Modul penggerak spuit",          "en": "Syringe drive modules" },
+    { "id": "Penggabung jalur material",      "en": "Material path merger" },
+    { "id": "Pemilihan motor dan driver",     "en": "Motor and driver selection" },
+    { "id": "Firmware dan kontrol material",  "en": "Firmware and material control" },
+    { "id": "Fabrikasi dan troubleshooting",  "en": "Fabrication and troubleshooting" }
   ],
   "results": [],
   "links": [],
-  "media": { "cover": "", "gallery": [] }
+  "media": { "cover": "cover.png", "gallery": [] }
 }
