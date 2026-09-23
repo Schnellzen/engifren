@@ -30,3 +30,5 @@ Concise answers, practical ready-to-use output.
 ## Inbox
 New projects arrive as `_inbox/<slug>/` with `brief.md` + raw photos.
 Create the project from it, compress photos into `projects/<slug>/`, build, show me a summary, and wait for my OK before committing and pushing.
+
+Don't view photos unless I ask; just compress and copy them. Use captions from brief.md.
