@@ -1,16 +1,21 @@
 {
   "slug": "plastic-tensile-testing-kit",
   "featured": false,
+  "confidential": false,
   "title": {
     "id": "Kit Uji Tarik Plastik",
     "en": "Plastic Tensile Testing Kit"
   },
   "tagline": {
-    "id": "Mesin uji tarik desktop dan cetakan spesimen ASTM D638 Tipe V, lalu dikembangkan untuk uji lentur 3 titik.",
-    "en": "A desktop tensile tester and an ASTM D638 Type V specimen mold, later extended for 3-point bending."
+    "id": "Mesin uji tarik desktop bermotor untuk spesimen plastik ASTM D638-10 Tipe V, dikontrol dari laptop lewat USB, plus cetakan spesimen dan jig uji lentur 3 titik.",
+    "en": "A compact, motorized tensile tester for ASTM D638-10 Type V plastic specimens, controlled from a laptop over USB, plus a specimen mold and a 3-point bending jig."
   },
   "status": "completed",
   "year": 2025,
+  "client_type": {
+    "id": "Laboratorium Teknik FTI ITB",
+    "en": "Laboratorium Teknik FTI ITB"
+  },
   "disciplines": [
     "mechanical",
     "electronics",
@@ -23,25 +28,29 @@
     "prototyping"
   ],
   "approach": {
-    "id": "Rangkanya dari profil aluminium 2040/2060 dengan lead screw 8 mm, digerakkan stepper lewat driver TB6600, dan gayanya dibaca load cell. Firmware menerima perintah berbasis kode, dan data direkam ke komputer lewat serial. Spesimennya dibuat pakai cetakan dua bagian yang diisi langsung dari extruder, dengan bushing pemandu dan baut supaya kedua sisinya presisi. Belakangan ditambah jig untuk uji lentur 3 titik.",
-    "en": "The frame uses 2040/2060 aluminium profile with an 8 mm lead screw, driven by a stepper through a TB6600 driver, with force read by a load cell. The firmware takes code-based commands, and data is logged to a computer over serial. Specimens are made in a two-part mold filled straight from an extruder, with guide bushings and bolts to keep both halves aligned. A 3-point bending jig was added later."
+    "id": "Rangkanya dari profil aluminium 2040/2060 dengan dua lead screw 8 mm (pitch 2 mm), masing-masing digerakkan stepper lewat driver TB6600, dan gayanya dibaca load cell dalam kgf. Stepper kiri dan kanan bisa dikontrol terpisah supaya crosshead tetap rata. Semuanya dikontrol dari laptop lewat USB dengan perintah teks sederhana (D-code): gerak, tare, rekam data, sampai tarik otomatis hingga target beban atau jarak. Datanya (step, mm, kgf) direkam lewat CoolTerm lalu diolah di Excel. Spesimennya dibuat pakai cetakan dua bagian yang diisi langsung dari extruder, dengan bushing pemandu dan baut supaya kedua sisinya presisi. Tahun 2026 ditambah jig untuk uji lentur 3 titik.",
+    "en": "The frame uses 2040/2060 aluminium profile with twin 8 mm lead screws (2 mm pitch), each driven by a stepper through a TB6600 driver, with force read by a load cell in kgf. The left and right steppers can be controlled separately to keep the crosshead level. Everything runs from a laptop over USB with simple text commands (D-codes): move, tare, log data, or pull until a target load or distance. Data (steps, mm, kgf) is logged with CoolTerm and processed in Excel. Specimens are made in a two-part mold filled straight from an extruder, with guide bushings and bolts to keep both halves aligned. A 3-point bending jig was added in 2026."
   },
   "scope": [
     {
-      "id": "Desain mekanik dan rangka",
-      "en": "Mechanical design and frame"
+      "id": "Desain mekanik dan CAD (rangka, crosshead, grip)",
+      "en": "Mechanical design and CAD (frame, crosshead, grips)"
     },
     {
-      "id": "Grip spesimen",
-      "en": "Specimen grips"
+      "id": "Pemilihan komponen",
+      "en": "Component selection"
     },
     {
-      "id": "Elektronik dan firmware",
-      "en": "Electronics and firmware"
+      "id": "Elektronik dan wiring",
+      "en": "Electronics and wiring"
     },
     {
-      "id": "Logging data",
-      "en": "Data logging"
+      "id": "Firmware dengan perintah D-code",
+      "en": "Firmware with a D-code command set"
+    },
+    {
+      "id": "Setup logging data",
+      "en": "Data logging setup"
     },
     {
       "id": "Cetakan spesimen dan adapter nozzle extruder",
@@ -56,10 +65,84 @@
       "en": "User manual"
     }
   ],
-  "results": [],
+  "results": [
+    {
+      "label": {
+        "id": "Beban maksimum",
+        "en": "Max load"
+      },
+      "value": "≈ 200 kgf"
+    },
+    {
+      "label": {
+        "id": "Waktu uji per spesimen",
+        "en": "Test time per specimen"
+      },
+      "value": "1–5 min"
+    }
+  ],
   "links": [],
   "media": {
-    "cover": "",
-    "gallery": []
+    "cover": "cover.png",
+    "gallery": [
+      {
+        "src": "gallery/02-grip-closeup.png",
+        "caption": {
+          "id": "Grip spesimen dengan sampel ASTM D638 Tipe V",
+          "en": "Specimen grips with an ASTM D638 Type V sample"
+        }
+      },
+      {
+        "src": "gallery/03-grip-front.png",
+        "caption": {
+          "id": "Kelurusan grip, tampak depan",
+          "en": "Grip alignment, front view"
+        }
+      },
+      {
+        "src": "gallery/04-petg-test-curve.png",
+        "caption": {
+          "id": "Kurva beban dari uji PETG pada 0,1 mm/s",
+          "en": "Load curve from a PETG test at 0.1 mm/s"
+        }
+      },
+      {
+        "src": "gallery/05-front-drawing.png",
+        "caption": {
+          "id": "Gambar garis tampak depan",
+          "en": "Front line drawing"
+        }
+      }
+    ]
+  },
+  "problem": {
+    "id": "Klien butuh data kekuatan tarik sampel plastik, misalnya PETG hasil 3D print, tapi mesin uji tarik universal komersial terlalu mahal atau susah diakses.",
+    "en": "The client needed tensile strength data for plastic samples, such as 3D-printed PETG, without access to or budget for a commercial universal testing machine."
+  },
+  "costing": {
+    "visible": true,
+    "items": [
+      {
+        "label": {
+          "id": "Material",
+          "en": "Materials"
+        },
+        "percent": 60
+      },
+      {
+        "label": {
+          "id": "Fabrikasi",
+          "en": "Fabrication"
+        },
+        "percent": 10
+      },
+      {
+        "label": {
+          "id": "Biaya engineering",
+          "en": "Engineering fee"
+        },
+        "percent": 30
+      }
+    ]
   }
 }
