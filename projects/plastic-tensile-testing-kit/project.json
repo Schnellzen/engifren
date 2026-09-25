@@ -7,8 +7,8 @@
     "en": "Plastic Tensile Testing Kit"
   },
   "tagline": {
-    "id": "Mesin uji tarik desktop bermotor untuk spesimen plastik ASTM D638-10 Tipe V, dikontrol dari laptop lewat USB, plus cetakan spesimen dan jig uji lentur 3 titik.",
-    "en": "A compact, motorized tensile tester for ASTM D638-10 Type V plastic specimens, controlled from a laptop over USB, plus a specimen mold and a 3-point bending jig."
+    "id": "Mesin uji tarik desktop bermotor untuk spesimen plastik ASTM D638-10 Tipe V, dikontrol dari laptop lewat USB, dengan jig tambahan untuk uji lentur 3 titik.",
+    "en": "A compact, motorized tensile tester for ASTM D638-10 Type V plastic specimens, controlled from a laptop over USB, with an add-on 3-point bending jig."
   },
   "status": "completed",
   "year": 2025,
@@ -28,8 +28,8 @@
     "prototyping"
   ],
   "approach": {
-    "id": "Rangkanya dari profil aluminium 2040/2060 dengan dua lead screw 8 mm (pitch 2 mm), masing-masing digerakkan stepper lewat driver TB6600, dan gayanya dibaca load cell dalam kgf. Stepper kiri dan kanan bisa dikontrol terpisah supaya crosshead tetap rata. Semuanya dikontrol dari laptop lewat USB dengan perintah teks sederhana (D-code): gerak, tare, rekam data, sampai tarik otomatis hingga target beban atau jarak. Datanya (step, mm, kgf) direkam lewat CoolTerm lalu diolah di Excel. Spesimennya dibuat pakai cetakan dua bagian yang diisi langsung dari extruder, dengan bushing pemandu dan baut supaya kedua sisinya presisi. Tahun 2026 ditambah jig untuk uji lentur 3 titik.",
-    "en": "The frame uses 2040/2060 aluminium profile with twin 8 mm lead screws (2 mm pitch), each driven by a stepper through a TB6600 driver, with force read by a load cell in kgf. The left and right steppers can be controlled separately to keep the crosshead level. Everything runs from a laptop over USB with simple text commands (D-codes): move, tare, log data, or pull until a target load or distance. Data (steps, mm, kgf) is logged with CoolTerm and processed in Excel. Specimens are made in a two-part mold filled straight from an extruder, with guide bushings and bolts to keep both halves aligned. A 3-point bending jig was added in 2026."
+    "id": "Rangkanya dari profil aluminium 2040/2060 dengan dua lead screw 8 mm (pitch 2 mm), masing-masing digerakkan stepper lewat driver TB6600, dan gayanya dibaca load cell dalam kgf. Stepper kiri dan kanan bisa dikontrol terpisah supaya crosshead tetap rata. Semuanya dikontrol dari laptop lewat USB dengan perintah teks sederhana (D-code): gerak, tare, rekam data, sampai tarik otomatis hingga target beban atau jarak. Datanya (step, mm, kgf) direkam lewat CoolTerm lalu diolah di Excel. Spesimennya dibuat pakai Cetakan Spesimen ASTM D638 Tipe V. Tahun 2026 ditambah jig untuk uji lentur 3 titik.",
+    "en": "The frame uses 2040/2060 aluminium profile with twin 8 mm lead screws (2 mm pitch), each driven by a stepper through a TB6600 driver, with force read by a load cell in kgf. The left and right steppers can be controlled separately to keep the crosshead level. Everything runs from a laptop over USB with simple text commands (D-codes): move, tare, log data, or pull until a target load or distance. Data (steps, mm, kgf) is logged with CoolTerm and processed in Excel. Specimens are made with the ASTM D638 Type V Specimen Mold. A 3-point bending jig was added in 2026."
   },
   "scope": [
     {
@@ -51,10 +51,6 @@
     {
       "id": "Setup logging data",
       "en": "Data logging setup"
-    },
-    {
-      "id": "Cetakan spesimen dan adapter nozzle extruder",
-      "en": "Specimen mold and extruder nozzle adapter"
     },
     {
       "id": "Jig uji lentur 3 titik",
@@ -81,7 +77,16 @@
       "value": "1–5 min"
     }
   ],
-  "links": [],
+  "links": [
+    {
+      "type": "link",
+      "label": {
+        "id": "Cetakan Spesimen ASTM D638 Tipe V",
+        "en": "ASTM D638 Type V Specimen Mold"
+      },
+      "url": "https://schnellzen.github.io/engifren/projects/astm-d638-mold/"
+    }
+  ],
   "media": {
     "cover": "cover.png",
     "gallery": [

@@ -1,0 +1,138 @@
+{
+  "slug": "astm-d638-mold",
+  "featured": false,
+  "confidential": false,
+  "title": {
+    "id": "Cetakan Spesimen ASTM D638 Tipe V",
+    "en": "ASTM D638 Type V Specimen Mold"
+  },
+  "tagline": {
+    "id": "Cetakan aluminium 7075 dua bagian yang dipasang di extruder dan diisi langsung, untuk membuat spesimen uji tarik ASTM D638-10 Tipe V tanpa mesin injection molding.",
+    "en": "A two-part aluminium 7075 mold that bolts onto an extruder and fills directly, producing standard ASTM D638-10 Type V tensile specimens without an injection molding machine."
+  },
+  "status": "completed",
+  "year": 2025,
+  "client_type": {
+    "id": "Laboratorium Teknik FTI ITB",
+    "en": "Laboratorium Teknik FTI ITB"
+  },
+  "disciplines": [
+    "mechanical",
+    "fabrication"
+  ],
+  "services": [
+    "mechanical-design",
+    "prototyping"
+  ],
+  "problem": {
+    "id": "Klien butuh spesimen uji tarik yang bentuknya standar dan konsisten dari material polimer atau daur ulang mereka sendiri, tapi tidak punya mesin injection molding.",
+    "en": "The client needed consistent, standard-shape tensile specimens from their own polymer or recycled material, but had no injection molding machine."
+  },
+  "approach": {
+    "id": "Cetakan aluminium 7075 dua bagian dengan rongga Tipe V dipasang langsung ke outlet extruder lewat adapter ulir M16, jadi extruder yang sudah ada cukup untuk mengisinya (sekitar 170 °C). Satu bushing pemandu menjaga kedua bagian tetap sejajar, dan 4 baut kupu-kupu M5 yang dikencangkan dengan pola silang menjepitnya tanpa perlu alat. Setelah terisi, cetakan bisa didinginkan di air supaya lebih cepat. Desainnya berkembang dari v1 ke v2.2, lalu direvisi lagi di 2026. Spesimennya dipakai di Kit Uji Tarik Plastik.",
+    "en": "The two-part aluminium 7075 mold with a Type V cavity mounts straight onto the extruder outlet through an M16 thread adapter, so an existing extruder can fill it (around 170 °C). A single guide bushing keeps both halves aligned, and 4 M5 wing bolts tightened in a cross pattern clamp it without tools. Once filled, the mold can be quenched in water to cool faster. The design went from v1 to v2.2 and was revised again in 2026. Its specimens are tested on the Plastic Tensile Testing Kit."
+  },
+  "scope": [
+    {
+      "id": "Desain cetakan dan CAD (dua bagian, rongga Tipe V, saluran masuk)",
+      "en": "Mold design and CAD (two halves, Type V cavity, inlet)"
+    },
+    {
+      "id": "Iterasi desain v1 sampai v2.2",
+      "en": "Design iterations v1 to v2.2"
+    },
+    {
+      "id": "Adapter nozzle extruder (ulir M16)",
+      "en": "Extruder nozzle adapter (M16 thread)"
+    },
+    {
+      "id": "Manual pengguna",
+      "en": "User manual"
+    }
+  ],
+  "results": [
+    {
+      "label": {
+        "id": "Waktu isi + tahan per spesimen",
+        "en": "Fill and hold time per specimen"
+      },
+      "value": "2–10 min"
+    }
+  ],
+  "links": [
+    {
+      "type": "link",
+      "label": {
+        "id": "Kit Uji Tarik Plastik",
+        "en": "Plastic Tensile Testing Kit"
+      },
+      "url": "https://schnellzen.github.io/engifren/projects/plastic-tensile-testing-kit/"
+    }
+  ],
+  "media": {
+    "cover": "cover.png",
+    "gallery": [
+      {
+        "src": "gallery/01-mold-half-cavity.png",
+        "caption": {
+          "id": "Setengah cetakan dengan rongga spesimen Tipe V",
+          "en": "Mold half with the Type V specimen cavity"
+        }
+      },
+      {
+        "src": "gallery/02-bushing-and-bolts.png",
+        "caption": {
+          "id": "Tata letak bushing pemandu dan baut kupu-kupu",
+          "en": "Guide bushing and wing-bolt layout"
+        }
+      },
+      {
+        "src": "gallery/03-assembly-sequence.png",
+        "caption": {
+          "id": "Baut dikencangkan dengan pola silang",
+          "en": "Bolts tightened in a cross pattern"
+        }
+      },
+      {
+        "src": "gallery/04-molding-in-action.png",
+        "caption": {
+          "id": "Polimer keluar dari lubang ventilasi cetakan saat pengisian",
+          "en": "Polymer flowing out of the mold vent during filling"
+        }
+      },
+      {
+        "src": "gallery/05-mounted-on-extruder.png",
+        "caption": {
+          "id": "Tampilan garis cetakan di extruder",
+          "en": "Line view of the mold on the extruder"
+        }
+      }
+    ]
+  },
+  "costing": {
+    "visible": true,
+    "items": [
+      {
+        "label": {
+          "id": "Material",
+          "en": "Materials"
+        },
+        "percent": 30
+      },
+      {
+        "label": {
+          "id": "Fabrikasi",
+          "en": "Fabrication"
+        },
+        "percent": 50
+      },
+      {
+        "label": {
+          "id": "Biaya engineering",
+          "en": "Engineering fee"
+        },
+        "percent": 20
+      }
+    ]
+  }
+}
