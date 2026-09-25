@@ -11,6 +11,7 @@ Live at https://schnellzen.github.io/engifren/. Every push to `main` rebuilds an
 - Don't invent results, years, or client names. Leave the field out if unknown.
 - Client names are hidden unless the user says otherwise; use a generic `client_type`.
 - Photos: run `python tools/compress_images.py projects/<slug>` before committing.
+- Commits: no `Co-Authored-By` or other Claude attribution lines in commit messages.
 
 ## Workflow for a new project
 1. User fills the brief (questions below).
