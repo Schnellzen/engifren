@@ -44,6 +44,9 @@
     "cover": "cover.jpg",
     "gallery": [
       { "src": "gallery/01.jpg", "caption": { "id": "Keterangan foto", "en": "Photo caption" } }
+    ],
+    "videos": [
+      { "src": "video/01.mp4", "caption": { "id": "Keterangan video", "en": "Video caption" } }
     ]
   }
 }

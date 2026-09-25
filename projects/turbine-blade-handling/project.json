@@ -66,10 +66,10 @@
     "cover": "cover.png",
     "gallery": [
       {
-        "src": "gallery/01-exploded-view.png",
+        "src": "gallery/00-transport-box-base.png",
         "caption": {
-          "id": "Exploded view: tutup, foam, sudu, grid, dan base",
-          "en": "Exploded view: lid, foam, blades, grid, base"
+          "id": "Base kotak transport dengan grid 3×8 kompartemen",
+          "en": "Transport box base with 3×8 compartment grid"
         }
       },
       {
@@ -91,6 +91,22 @@
         "caption": {
           "id": "Tutup vs base, ditinggikan 1–2 cm supaya foam menjepit",
           "en": "Lid vs base, raised 1–2 cm for foam clamping"
+        }
+      }
+    ],
+    "videos": [
+      {
+        "src": "video/explode.mp4",
+        "caption": {
+          "id": "Animasi exploded view kotak transport",
+          "en": "Transport box exploded view animation"
+        }
+      },
+      {
+        "src": "video/collapse.mp4",
+        "caption": {
+          "id": "Animasi perakitan kotak transport",
+          "en": "Transport box assembly animation"
         }
       }
     ]

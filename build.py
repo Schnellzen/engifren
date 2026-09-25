@@ -189,6 +189,11 @@ def load_project(folder, site, include_drafts):
         src = asset(g.get("src"), "gallery image")
         if src:
             p["gallery"].append({"src": src, "caption": bi(g.get("caption"), where, "caption")})
+    p["videos"] = []
+    for v in media.get("videos", []):
+        src = asset(v.get("src"), "video")
+        if src:
+            p["videos"].append({"src": src, "caption": bi(v.get("caption"), where, "caption")})
     return p
 
 

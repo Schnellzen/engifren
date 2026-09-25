@@ -59,6 +59,17 @@
       </figure>
       {% endfor %}
 
+      {% if p.videos %}
+      <div class="clips">
+        {% for v in p.videos %}
+        <figure class="video">
+          <video src="{{ v.src }}" autoplay muted loop playsinline preload="metadata" aria-label="{{ v.caption | tx }}"></video>
+          {% if v.caption %}<figcaption>{{ v.caption | t }}</figcaption>{% endif %}
+        </figure>
+        {% endfor %}
+      </div>
+      {% endif %}
+
       {% if p.results %}
       <section class="block">
         <h2>{{ ui.results | t }}</h2>
