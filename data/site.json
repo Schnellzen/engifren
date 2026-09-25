@@ -109,8 +109,6 @@
 
   "about": {
     "title": { "id": "Satu engineer, dari awal sampai selesai", "en": "One engineer, start to finish" },
-    "name": "Dulham",
-    "role": { "id": "Engineer & pendiri EngiFren", "en": "Engineer & founder of EngiFren" },
     "photo": "",
     "text": {
       "id": "Orang yang kamu ajak ngobrol adalah orang yang sama yang menghitung, mendesain, membuat, memprogram, dan menguji alatnya. Tidak ada informasi yang hilang di antara bagian penjualan dan engineer. Berlatar belakang Teknik Kimia ITB, dengan pengalaman di desain 3D dan manufaktur, mekatronika, dan analisis kimia.",

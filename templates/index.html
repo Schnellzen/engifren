@@ -111,7 +111,7 @@
     <div class="about__text">
       <h2 class="section__title">{{ site.about.title | t }}</h2>
       <p>{{ site.about.text | t }}</p>
-      <p class="about__sign"><strong>{{ site.about.name }}</strong><span>{{ site.about.role | t }}</span></p>
+      {% if site.about.name %}<p class="about__sign"><strong>{{ site.about.name }}</strong><span>{{ site.about.role | t }}</span></p>{% endif %}
     </div>
   </div>
 </section>
