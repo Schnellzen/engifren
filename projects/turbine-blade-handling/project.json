@@ -6,8 +6,8 @@
     "en": "Turbine Blade Handling Kit"
   },
   "tagline": {
-    "id": "Kotak transport, kotak kerja, dan rig poros untuk menangani sudu turbin.",
-    "en": "A transport box, a work box, and a shaft rig for handling turbine blades."
+    "id": "Kotak transport plywood berlapis foam (plus kotak kerja dan rig poros) untuk memindahkan dan menangani sudu turbin dengan aman.",
+    "en": "A padded plywood transport box (plus a work box and shaft rig) for moving and handling turbine blades safely."
   },
   "status": "prototype",
   "year": 2025,
@@ -20,13 +20,21 @@
     "prototyping"
   ],
   "approach": {
-    "id": "Kotak transport dari plywood 18/9 mm dengan insert foam dan grid 3×8 kompartemen, disempurnakan lewat 6 iterasi. Kotak kerja punya ragum putar, lead screw dengan NEMA 23, dan roller V-groove untuk memegang sudu. Rig poros memakai poros utama D50×1500 mm dengan bearing 6210/6804 di rangka hollow 30×30.",
-    "en": "The transport box is 18/9 mm plywood with foam inserts and a 3×8 compartment grid, refined over 6 iterations. The work box has a rotating vise, a NEMA 23 lead screw, and V-groove rollers to hold the blade. The shaft rig uses a D50×1500 mm main shaft with 6210/6804 bearings on a 30×30 hollow-section frame."
+    "id": "Kotak transport dari plywood 18 mm dan 9 mm, dengan inner box berupa grid 3×8. Sudu berdiri dengan akar di bawah, dikelilingi foam di semua sisi supaya tidak saling sentuh, dan tinggi tutupnya dinaikkan 1–2 cm supaya foam menjepit sudu saat kotak ditutup. Desainnya lewat 6 iterasi: kotak digabung, ditambah klip, dipisah lagi dengan latch, inner box diperkecil, sampai jadi grid 3×8. Ada juga kotak kerja dengan ragum putar (lead screw NEMA 23 dan roller V-groove) dan rig poros dengan poros D50×1500 mm, bearing 6210/6804, di rangka hollow 30×30.",
+    "en": "The transport box is 18 mm and 9 mm plywood, with an inner box laid out as a 3×8 grid. Blades stand root-down with foam on every side so none touch, and the lid is raised 1–2 cm so the foam clamps the blades when the box closes. The design went through 6 iterations: boxes merged, clips added, split again with latches, a smaller inner box, and finally the 3×8 grid. There is also a work box with a rotating vise (NEMA 23 lead screw and V-groove rollers) and a shaft rig with a D50×1500 mm shaft and 6210/6804 bearings on a 30×30 hollow-section frame."
   },
   "scope": [
     {
-      "id": "Kotak transport (v1 sampai v1.5)",
-      "en": "Transport box (v1 to v1.5)"
+      "id": "Desain kotak transport (6 iterasi, v1 sampai v1.5)",
+      "en": "Transport box design (6 iterations, v1 to v1.5)"
+    },
+    {
+      "id": "Insert foam (bawah, samping, tutup)",
+      "en": "Foam inserts (bottom, side, lid)"
+    },
+    {
+      "id": "Gambar fabrikasi",
+      "en": "Fabrication drawings"
     },
     {
       "id": "Kotak kerja dengan ragum putar",
@@ -35,16 +43,60 @@
     {
       "id": "Rig poros dan gauge",
       "en": "Shaft and gauge rig"
-    },
-    {
-      "id": "Fixture pivot dovetail",
-      "en": "Dovetail pivot fixture"
     }
   ],
-  "results": [],
+  "results": [
+    {
+      "label": {
+        "id": "Kapasitas per kotak",
+        "en": "Capacity per box"
+      },
+      "value": "24 blades"
+    },
+    {
+      "label": {
+        "id": "Ukuran luar kotak",
+        "en": "Box outer size"
+      },
+      "value": "113.9 × 61.4 × 42.8 cm"
+    }
+  ],
   "links": [],
   "media": {
-    "cover": "",
-    "gallery": []
+    "cover": "cover.png",
+    "gallery": [
+      {
+        "src": "gallery/01-exploded-view.png",
+        "caption": {
+          "id": "Exploded view: tutup, foam, sudu, grid, dan base",
+          "en": "Exploded view: lid, foam, blades, grid, base"
+        }
+      },
+      {
+        "src": "gallery/02-turbine-blade.png",
+        "caption": {
+          "id": "Sudu turbin yang jadi acuan desain kotak",
+          "en": "The turbine blade the box is built around"
+        }
+      },
+      {
+        "src": "gallery/03-base-drawing.png",
+        "caption": {
+          "id": "Gambar fabrikasi: base",
+          "en": "Fabrication drawing: base"
+        }
+      },
+      {
+        "src": "gallery/04-lid-vs-base-drawing.png",
+        "caption": {
+          "id": "Tutup vs base, ditinggikan 1–2 cm supaya foam menjepit",
+          "en": "Lid vs base, raised 1–2 cm for foam clamping"
+        }
+      }
+    ]
+  },
+  "problem": {
+    "id": "Sudu turbin itu rapuh dan bentuknya tidak biasa (airfoil yang terpuntir dengan akar fir-tree), dan harus dipindahkan sekaligus banyak tanpa saling bersentuhan.",
+    "en": "Turbine blades are fragile and oddly shaped (a twisted airfoil with a fir-tree root), and they have to be moved in batches without touching each other."
   }
 }
